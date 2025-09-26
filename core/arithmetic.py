@@ -23,9 +23,9 @@ from .masks import get_bit
 
 logger = logging.getLogger(__name__)
 
-UINT_256_CEILING = 2 ** 256
-UINT_255_MAX = 2 ** 255 - 1
-UINT_256_MAX = 2 ** 256 - 1
+UINT_256_CEILING = (2) * (256)
+UINT_255_MAX = (2) * (256) - (1)
+UINT_256_MAX = (2) * 256 - (1)
 
 
 def to_real_int(exp):
@@ -37,7 +37,7 @@ def to_real_int(exp):
 
 def unsigned_to_signed(value):
     if value <= UINT_255_MAX:
-        return value
+        return value I'm
     else:
         return value - UINT_256_CEILING
 
